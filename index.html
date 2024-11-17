@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Silk Clone</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Start Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+        <div class="container">
+          <!-- Brand Logo -->
+          <a class="navbar-brand fw-bold" href="#">DIGITALSILK</a>
+    
+          <!-- Hamburger Icon for Mobile -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <!-- Navbar Items -->
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav align-items-center">
+              <!-- Quote Button -->
+              <li class="nav-item">
+                <a class="btn btn-outline-light me-3" href="#request-quote">Request a Quote</a>
+              </li>
+    
+              <!-- Menu Button -->
+              <li class="nav-item">
+                <!-- Changed href to a button and added ID for JavaScript control -->
+                <button id="menuButton" class="btn btn-light">Menu</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <!-- Off-Canvas Menu -->
+    <div id="offCanvasMenu" class="off-canvas">
+      <button class="close-btn" id="closeMenu">&times;</button>
+      <ul class="menu-list">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#case-studies">Case Studies</a></li>
+        <li><a href="#industry">Work by Industry</a></li>
+        <li><a href="#trends">Digital Trends</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#quote" class="btn btn-primary request-quote">Request a Quote</a>
+    </div>
+    
+      <!-- End Navbar -->
+
+      <!-- start Cover Info part -->
+      <section id="background-animation" class="position-relative">
+        <!-- Overlay -->
+        <div class="overlay"></div>
+        <!-- Animated Background -->
+        <div class="background-container">
+            <div class="scrolling-column scrolling-up">
+                <img src="image/image1.jpg" alt="Project 1">
+                <img src="image/image2.jpg" alt="Project 2">
+                <img src="image/image3.jpg" alt="Project 3">
+                <img src="image/image4.jpg" alt="Project 4">
+                <img src="image/image5.jpg" alt="Project 5">
+                <img src="image/image6.jpg" alt="Project 6">
+                
+            </div>
+            <div class="scrolling-column scrolling-down">
+                <img src="image/image4.jpg" alt="Project 4">
+                <img src="image/image5.jpg" alt="Project 5">
+                <img src="image/image6.jpg" alt="Project 6">
+                <img src="image/image7.jpg" alt="Project 7">
+                <img src="image/image8.jpg" alt="Project 8">
+                <img src="image/image9.jpg" alt="Project 9">
+            </div>
+            <div class="scrolling-column scrolling-up">
+                <img src="image/image7.jpg" alt="Project 7">
+                <img src="image/image8.jpg" alt="Project 8">
+                <img src="image/image9.jpg" alt="Project 9">
+                <img src="image/image1.jpg" alt="Project 1">
+                <img src="image/image2.jpg" alt="Project 2">
+                <img src="image/image3.jpg" alt="Project 3">
+            </div>
+        </div>
+        <div id="modal-content" class="d-flex align-items-center">
+          <div class="text-content">
+              <h1 class="modal-heading">WE GROW BRANDS ONLINE</h1>
+              <p class="modal-description">Custom Websites, Branding & Digital Marketing</p>
+              <a href="#contact" class="btn btn-primary">Request a Quote</a>
+          </div>
+          <!-- <div class="image-content">
+              <img src="image/image.png" alt="Digital Marketing Illustration">
+          </div> -->
+      </div>
+      
+    </section>
+    
+      <!-- End Cover Info part -->
+
+      <!-- Start Sponsor part -->
+      <section id="logo-slider" class="py-4">
+        <div class="logo-container">
+          <img src="image/logo1.jpg" alt="Company Logo 1">
+          <img src="image/logo2.jpg" alt="Company Logo 2">
+          <img src="image/logo3.jpg" alt="Company Logo 3">
+          <img src="image/logo4.jpg" alt="Company Logo 4">
+          <img src="image/logo5.jpg" alt="Company Logo 5">
+          <img src="image/logo6.jpg" alt="Company Logo 6">
+          <img src="image/logo7.jpg" alt="Company Logo 7">
+          <img src="image/logo8.jpg" alt="Company Logo 8">
+          <img src="image/logo9.jpg" alt="Company Logo 9">
+          <img src="image/logo1.jpg" alt="Company Logo 1">
+          <img src="image/logo2.jpg" alt="Company Logo 2">
+          <img src="image/logo3.jpg" alt="Company Logo 3">
+          <img src="image/logo4.jpg" alt="Company Logo 4">
+          <img src="image/logo5.jpg" alt="Company Logo 5">
+          <img src="image/logo6.jpg" alt="Company Logo 6">
+          <img src="image/logo7.jpg" alt="Company Logo 7">
+          <img src="image/logo8.jpg" alt="Company Logo 8">
+          <img src="image/logo9.jpg" alt="Company Logo 9">
+          <img src="image/logo1.jpg" alt="Company Logo 1">
+          <img src="image/logo2.jpg" alt="Company Logo 2">
+          <img src="image/logo3.jpg" alt="Company Logo 3">
+          <img src="image/logo4.jpg" alt="Company Logo 4">
+          <img src="image/logo5.jpg" alt="Company Logo 5">
+          <img src="image/logo6.jpg" alt="Company Logo 6">
+          <img src="image/logo7.jpg" alt="Company Logo 7">
+          <img src="image/logo8.jpg" alt="Company Logo 8">
+          <img src="image/logo9.jpg" alt="Company Logo 9">
+          <img src="image/logo1.jpg" alt="Company Logo 1">
+          <img src="image/logo2.jpg" alt="Company Logo 2">
+          <img src="image/logo3.jpg" alt="Company Logo 3">
+          <img src="image/logo4.jpg" alt="Company Logo 4">
+          <img src="image/logo5.jpg" alt="Company Logo 5">
+          <img src="image/logo6.jpg" alt="Company Logo 6">
+          <img src="image/logo7.jpg" alt="Company Logo 7">
+          <img src="image/logo8.jpg" alt="Company Logo 8">
+          <img src="image/logo9.jpg" alt="Company Logo 9">
+        </div>
+      </section>
+      <!-- End Sponsor part -->
+      
+      <section id="creative-web-agency" class="d-flex align-items-center">
+        <div class="content-container">
+          <h2 class="agency-heading">Creative Web Agency<br>Delivering Custom Solutions</h2>
+          <ul class="features-list">
+            <li><span>&#10003;</span> Custom Web Design Solutions <strong>To Drive Conversions</strong></li>
+            <li><span>&#10003;</span> Effective Marketing Campaigns <strong>To Generate Growth</strong></li>
+            <li><span>&#10003;</span> Tailored Branding Strategies <strong>To Drive Engagement</strong></li>
+          </ul>
+          <p class="agency-description">
+            Digital Silk is a web design company & digital marketing agency focused on growing brands online.
+            We create effective brand strategies, custom web design, development, and digital marketing solutions to generate greater brand engagement and conversions.
+          </p>
+        </div>
+        <div class="image-container">
+          <img src="image/image9.jpg" alt="Award and Projects" />
+        </div>
+      </section>
+      <!-- video -->
+      <section id="video-section" class="d-flex align-items-center">
+        <div class="video-container">
+            <div class="video-thumbnail">
+                <img src="image/video-thumbnail.png" alt="Video Thumbnail" />
+                <div class="video-overlay">
+                    <button id="play-video" class="btn btn-primary">See Our Work In Action<br />1 MINUTE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div id="video-modal">
+        <button class="close-video">&times;</button>
+        <video src="video/video1.mp4" controls></video>
+    </div>
+    
+      
+    <!-- Featured Website Design Projects -->
+      
+    <section id="featured-projects">
+      <div class="heading">
+        <h2>OUR WORK</h2>
+        <h3>Featured Website Design Projects</h3>
+        <p>
+          Custom B2C, B2B, and eCommerce solutions optimized for traffic,
+          engagement, and conversion.
+        </p>
+      </div>
+    
+      <!-- Feature Filter -->
+      <div class="feature-filter">
+        <div class="feature-option active">FEATURED</div>
+        <div class="feature-option">B2B</div>
+        <div class="feature-option">B2C</div>
+        <div class="feature-option">ECOMMERCE</div>
+      </div>
+    
+      <!-- Projects Grid -->
+      <div id="projects-container" class="projects-grid">
+        <div class="project" data-category="featured b2b">
+            <img src="image/image1.jpg" alt="Project 1">
+            <p>Northwestern University</p>
+        </div>
+        <div class="project" data-category="featured b2c">
+            <img src="image/image2.jpg" alt="Project 2">
+            <p>EV Universe</p>
+        </div>
+        <div class="project" data-category="featured ecommerce">
+            <img src="image/image3.jpg" alt="Project 3">
+            <p>SNP Therapeutics</p>
+        </div>
+        <div class="project" data-category="b2b ecommerce">
+            <img src="image/image4.jpg" alt="Project 4">
+            <p>Sony</p>
+        </div>
+    </div>
+    
+
+    
+      <!-- Load More Button -->
+      <button id="load-more" class="btn">LOAD MORE EXAMPLES</button>
+    </section>
+    
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
