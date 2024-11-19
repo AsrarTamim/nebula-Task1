@@ -214,7 +214,21 @@ margin-bottom: 1.5rem;
       width: 100%;
     }
   }
-
+  /* .btn-outline-light:hover {
+    background-color: white;
+    color: black;
+    }
+    
+    .btn-light {
+    color: black;
+    border: none;
+    background-color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .btn-light:hover {
+    background-color: white;
+    } */
 
 
 /* Start Sponsor part -----------------------------------*/
@@ -290,7 +304,7 @@ margin-bottom: 1.5rem;
   }
   
 
-/* Off-Canvas Menu Styling */
+/* Off-Canvas Menu Styling------------------ */
 .off-canvas {
   position: fixed;
   top: 0;
@@ -321,7 +335,18 @@ margin-bottom: 1.5rem;
   padding: 0;
   margin: 0;
 }
+/* #logo-slider {
+  background-color: black;
+  overflow: hidden;
+  padding: 20px 0;
+}
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  animation: scroll-left 30s linear infinite;
+} */
 .off-canvas .menu-list li {
   margin: 1rem 0;
 }
@@ -431,24 +456,24 @@ margin-bottom: 1.5rem;
 
 
 /* video */
-/* Video Section Styling */
+
 #video-section {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 4rem 0;
-  background-color: #1a1a2e; /* Match the section background */
+  background-color: #1a1a2e;
 }
 
-/* Video Container */
+
 .video-container {
   position: relative;
   width: 100%;
-  max-width: 600px; /* Limit maximum width */
+  max-width: 600px; 
   margin: 0 auto;
 }
 
-/* Video Thumbnail */
+
 .video-thumbnail {
   position: relative;
   display: inline-block;
@@ -479,7 +504,7 @@ margin-bottom: 1.5rem;
   opacity: 1;
 }
 
-/* Button Styling */
+
 #play-video {
   background: linear-gradient(to right, #8000ff, #ff007a);
   border: none;
@@ -504,7 +529,7 @@ margin-bottom: 1.5rem;
   color: white;
 }
 
-/* Modal Styling */
+
 #video-modal {
   display: none;
   position: fixed;
@@ -535,10 +560,10 @@ margin-bottom: 1.5rem;
 }
 
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
   .video-container {
-    max-width: 90%; /* Adjust container width */
+    max-width: 90%; 
   }
 
   #play-video {
@@ -548,8 +573,8 @@ margin-bottom: 1.5rem;
 }
 
 
-/* Featured Website Design Projects */
-/* General Styles */
+/* Featured Website Design Projects-------------------- */
+
 #featured-projects {
   padding: 50px;
   text-align: center;
@@ -575,7 +600,7 @@ margin-bottom: 1.5rem;
   color: #e0e0e0;
 }
 
-/* Feature Filter */
+
 .feature-filter {
   display: flex;
   justify-content: center;
@@ -597,7 +622,7 @@ margin-bottom: 1.5rem;
   color: black;
 }
 
-/* Projects Grid */
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -617,7 +642,7 @@ margin-bottom: 1.5rem;
   font-weight: bold;
 }
 
-/* Button */
+
 .btn {
   padding: 10px 20px;
   background-color: #ff007f;
@@ -632,8 +657,8 @@ margin-bottom: 1.5rem;
   background-color: #ff5599;
 }
 .projects-grid .project {
-  width: 250px; /* Fixed width */
-  height: 300px; /* Fixed height */
+  width: 250px; 
+  height: 300px; 
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -643,12 +668,12 @@ margin-bottom: 1.5rem;
 
 .projects-grid .project img {
   width: 100%;
-  height: 80%; /* Adjust the height for images */
-  object-fit: cover; /* Crop or scale the image appropriately */
+  height: 80%; 
+  object-fit: cover; 
 }
 
 .projects-grid .project p {
-  height: 20%; /* Space for title */
+  height: 20%; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -675,16 +700,16 @@ margin-bottom: 1.5rem;
   text-align: center;
 }
 
-/* Modal Styling */
+
 .modal {
-  display: none; /* Hidden by default */
+  display: none; 
   position: fixed;
   z-index: 1000;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+  background-color: rgba(0, 0, 0, 0.8); 
 }
 
 .modal-content {
@@ -718,7 +743,7 @@ margin-bottom: 1.5rem;
 }
 
 #hidden-projects {
-  display: none; /* Hidden by default */
+  display: none;
 }
 
 .btn {
@@ -740,14 +765,14 @@ margin-bottom: 1.5rem;
 
 
 
-/* ----------------- */
-/* Clients Section */
+/* Clients Section----------------- */
+
 .clients-section {
   text-align: center;
   padding: 50px 20px;
-  background: linear-gradient(135deg, #00254d, #330866); /* Gradient background */
+  background: linear-gradient(135deg, #00254d, #330866); 
   color: white;
-  overflow: hidden; /* Hide content outside the section */
+  overflow: hidden;
 }
 
 .clients-title {
@@ -765,53 +790,51 @@ margin-bottom: 1.5rem;
 .sponsor-container {
   position: relative;
   width: 100%;
-  overflow: hidden; /* Hide overflowing content */
-  margin-bottom: 30px; /* Adds space between rows */
+  overflow: hidden; 
+  margin-bottom: 30px; 
 }
 
 /* Sponsor Row */
 .sponsor-row {
-  display: flex; /* Use flexbox for a horizontal layout */
-  animation: scroll-left 20s linear infinite; /* Seamless scrolling */
-  gap: 2px; /* No gaps between logos */
+  display: flex; 
+  animation: scroll-left 20s linear infinite; 
+  gap: 2px; 
   margin-bottom: 5px;
 }
 
 .sponsor-row.right-to-left {
-  animation: scroll-right 20s linear infinite; /* Reverse scrolling for the second row */
+  animation: scroll-right 20s linear infinite; 
 }
 
 .sponsor img {
-  height: 120px; /* Set consistent height for logos */
-  max-width: 250px; /* Ensure logos don't stretch too wide */
-  object-fit: contain; /* Maintain image aspect ratio */
+  height: 120px; 
+  max-width: 250px; 
+  object-fit: contain; 
 }
 
-/* Keyframe Animations for Scrolling */
+
 @keyframes scroll-left {
   from {
-    transform: translateX(0); /* Start at initial position */
+    transform: translateX(0); 
   }
   to {
-    transform: translateX(-50%); /* Move left by half the content width */
+    transform: translateX(-50%); 
   }
 }
 
 @keyframes scroll-right {
   from {
-    transform: translateX(-50%); /* Start offset for reverse scroll */
+    transform: translateX(-50%); 
   }
   to {
-    transform: translateX(0); /* End at the initial position */
+    transform: translateX(0); 
   }
 }
 
-/* ---------------- */
+/* Why Digital Silk Section---------------- */
 
-/* Why Us Section */
-/* Why Digital Silk Section */
 .digital-silk-section {
-  background: linear-gradient(135deg, #00254d, #330866); /* Add gradient background */
+  background: linear-gradient(135deg, #00254d, #330866);
   padding: 60px 20px;
   color: #ffffff;
 }
@@ -845,7 +868,7 @@ margin-bottom: 1.5rem;
 
 /* Feature Card */
 .feature-card {
-  background: rgba(255, 255, 255, 0.05); /* Slight transparency for effect */
+  background: rgba(255, 255, 255, 0.05); 
   border-radius: 10px;
   padding: 20px;
   text-align: center;
@@ -886,4 +909,212 @@ margin-bottom: 1.5rem;
   .features-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* From Concept To Market:------------------------- */
+
+#case-studies {
+  background: linear-gradient(to right, #020024, #090979, #00d4ff);
+  color: white;
+}
+
+.case-studies-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.case-studies-list li {
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.case-studies-list li.active img {
+  border: 2px solid #00d4ff;
+  border-radius: 5px;
+}
+
+.case-studies-list li img {
+  width: 150px;
+  height: auto;
+}
+
+.text-highlight {
+  color: #00d1b2;
+  font-weight: bold;
+}
+
+.performance-metrics {
+  gap: 2rem;
+}
+
+.metric h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.metric p {
+  margin: 0;
+  font-size: 1rem;
+}
+@media (max-width: 768px) {
+  #case-studies {
+    padding: 2rem 1rem;
+  }
+
+  .case-studies-list {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .case-studies-list li img {
+    width: 80px; 
+  }
+
+  .col-md-4 {
+    text-align: center;
+    margin-bottom: 2rem; 
+  }
+
+  .col-md-8 {
+    text-align: center;
+  }
+
+  #case-study-details h3,
+  #case-study-details p {
+    text-align: center;
+  }
+
+  .performance-metrics {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .metric h2 {
+    font-size: 2rem;
+  }
+
+  .btn {
+    width: 100%; 
+    margin-bottom: 1rem;
+  }
+}
+
+/* What Our Clients Love About Our Work------------------ */
+#testimonials {
+  background-color: #020024;
+  color: white;
+}
+
+.client-logo {
+  text-align: center;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.client-logo.active {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.client-logo img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.text-highlight {
+  color: #00d4ff;
+  font-weight: bold;
+}
+
+blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+blockquote footer {
+  margin-top: 1rem;
+  color: #cccccc;
+}
+
+#testimonial-prev,
+#testimonial-next {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+#testimonial-prev:hover,
+#testimonial-next:hover {
+  color: #00d4ff;
+}
+
+/* CMS Platform Tailored For Client Needs--------------------- */
+#cms-platforms {
+  background: linear-gradient(to bottom, #f0f8ff, #e6f7ff);
+}
+
+.platform-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.platform-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.platform-card h3 {
+  font-size: 1.5rem;
+  color: #002a5c;
+}
+
+.platform-card p {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.platform-card .btn-outline-primary {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.platform-card .btn-outline-primary:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+.bg-light-blue {
+  background-color: #eaf6ff;
+}
+
+.bg-light-green {
+  background-color: #eafde7;
+}
+
+.bg-light-orange {
+  background-color: #fff4e6;
+}
+
+.bg-light-purple {
+  background-color: #f6e9ff;
+}
+
+.icon-image {
+  width: 60px;
+  height: auto;
+}
+
+.col-md-6 h2, p{
+  color: black;
 }

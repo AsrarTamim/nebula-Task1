@@ -37,7 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
       videoModal.style.display = "none";
   });
 
-  // Close modal on outside click
   window.addEventListener("click", (event) => {
       if (event.target === videoModal) {
           videoModal.style.display = "none";
@@ -67,46 +66,41 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   });
 
-  // Set default state
   filterOptions[0].classList.add("active");
   projects.forEach((project) => (project.style.display = "block"));
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Select all projects and modal elements
   const projects = document.querySelectorAll(".project");
   const modal = document.getElementById("noticeBoardModal");
   const closeNotice = document.getElementById("closeNotice");
   const noticeText = document.getElementById("noticeText");
 
-  // Ensure all modal elements are available
   if (!modal || !closeNotice || !noticeText) {
       console.error("Modal structure is missing or not properly linked in the DOM.");
       return;
   }
 
-  // Add click event listener to each project
   projects.forEach((project) => {
       project.addEventListener("click", () => {
-          // Retrieve project title or fallback to 'Unknown Project'
           const projectName = project.querySelector("p")?.textContent.trim() || "Unknown Project";
           console.log(`Project clicked: ${projectName}`);
 
-          // Update the modal text dynamically
+
           noticeText.textContent = `You clicked on ${projectName}. This is a showcase of our custom design solutions.`;
 
-          // Display the modal
+    
           modal.style.display = "block";
       });
   });
 
-  // Close modal on close button click
+
   closeNotice.addEventListener("click", () => {
       console.log("Modal closed.");
       modal.style.display = "none";
   });
 
-  // Close modal on clicking outside of it
+
   window.addEventListener("click", (event) => {
       if (event.target === modal) {
           console.log("Modal closed by clicking outside.");
@@ -121,21 +115,143 @@ document.addEventListener("DOMContentLoaded", () => {
   const hideExamplesButton = document.getElementById("hide-examples");
   const hiddenProjects = document.getElementById("hidden-projects");
 
-  // Show hidden projects and update buttons
+
   loadMoreButton.addEventListener("click", () => {
-      hiddenProjects.style.display = "grid"; // Show hidden projects
-      loadMoreButton.style.display = "none"; // Hide "Load More" button
-      hideExamplesButton.style.display = "block"; // Show "Hide Examples" button
+      hiddenProjects.style.display = "grid"; 
+      loadMoreButton.style.display = "none"; 
+      hideExamplesButton.style.display = "block"; 
   });
 
-  // Hide hidden projects and update buttons
   hideExamplesButton.addEventListener("click", () => {
-      hiddenProjects.style.display = "none"; // Hide hidden projects
-      loadMoreButton.style.display = "block"; // Show "Load More" button
-      hideExamplesButton.style.display = "none"; // Hide "Hide Examples" button
+      hiddenProjects.style.display = "none"; 
+      loadMoreButton.style.display = "block"; 
+      hideExamplesButton.style.display = "none"; 
   });
 });
 
 
+// Case Studies Data
+const caseStudies = {
+    hp: {
+      title: "HP Case Study",
+      description: "HP needed to implement a global rewards program. In 6 months, we achieved:",
+      metric1: "40K",
+      metricDesc1: "active members inside the program",
+      metric2: "56%",
+      metricDesc2: "of customers are repeat customers",
+    },
+    xerox: {
+      title: "Xerox Case Study",
+      description: "Xerox needed a new strategy and website to capture B2B leads. In 6 months, we achieved:",
+      metric1: "20%",
+      metricDesc1: "sales increase for Xerox VersaLink",
+      metric2: "43%",
+      metricDesc2: "conversion rate for nurtured leads",
+    },
+    doforms: {
+      title: "DoForms Case Study",
+      description: "DoForms needed an SEO-optimized website. In 2 months, we achieved:",
+      metric1: "22%",
+      metricDesc1: "increase in new traffic",
+      metric2: "1.5K",
+      metricDesc2: "new organic keywords",
+    },
+    fieldedge: {
+      title: "FieldEdge Case Study",
+      description: "FieldEdge improved performance and engagement. Shortly after launch, we achieved:",
+      metric1: "19%",
+      metricDesc1: "increase in traffic",
+      metric2: "50%",
+      metricDesc2: "faster loading speed",
+    },
+    miami: {
+      title: "Miami Country Day School Case Study",
+      description: "Miami wanted to grow online visibility. Shortly after launch, we achieved:",
+      metric1: "32%",
+      metricDesc1: "decrease in bounce rates",
+      metric2: "15%",
+      metricDesc2: "increase in organic traffic",
+    },
+  };
+  
+  document.querySelectorAll(".case-studies-list li").forEach((logo) => {
+    logo.addEventListener("click", () => {
+      document.querySelectorAll(".case-studies-list li").forEach((el) => el.classList.remove("active"));
+      logo.classList.add("active");
+  
+      const caseKey = logo.id.replace("logo-", "");
+      const details = caseStudies[caseKey];
+  
+      document.getElementById("case-title").innerText = details.title;
+      document.getElementById("case-description").innerText = details.description;
+      document.getElementById("metric-1").innerText = details.metric1;
+      document.getElementById("metric-desc-1").innerText = details.metricDesc1;
+      document.getElementById("metric-2").innerText = details.metric2;
+      document.getElementById("metric-desc-2").innerText = details.metricDesc2;
+    });
+  });
+  
+window.addEventListener("resize", () => {
+    const caseStudiesList = document.querySelector(".case-studies-list");
+    if (window.innerWidth <= 768) {
+      caseStudiesList.style.overflowX = "auto";
+      caseStudiesList.style.display = "flex";
+      caseStudiesList.style.justifyContent = "flex-start";
+    } else {
+      caseStudiesList.style.overflowX = "visible";
+    }
+  });
+
+  
 
 
+  const testimonials = {
+    tray: {
+      text: "The Digital Silk team was the clear winner of our selection process and they’ve been an absolute dream to work with throughout the entire process.",
+      author: "Brian Whitney, CRO at Tray",
+    },
+    amida: {
+      text: "The team provided exceptional service and truly understood our goals. The results speak for themselves.",
+      author: "Director of Marketing at Amida Technology Solutions",
+    },
+    growpath: {
+      text: "Working with Digital Silk was transformative. Our online presence has never been stronger.",
+      author: "Connie Wong, Marketing Director at GrowPath",
+    },
+  };
+  
+
+  let currentClient = "tray";
+  
+  // Update Testimonial Content
+  function updateTestimonial(client) {
+    const testimonialText = document.getElementById("testimonial-text");
+    testimonialText.innerHTML = `
+      <p>${testimonials[client].text}</p>
+      <footer>— ${testimonials[client].author}</footer>
+    `;
+  
+    // Update active client logo
+    document.querySelectorAll(".client-logo").forEach((logo) => {
+      logo.classList.remove("active");
+    });
+    document.querySelector(`[data-client="${client}"]`).classList.add("active");
+  
+    currentClient = client;
+  }
+  
+  // Navigation Handlers
+  document.getElementById("testimonial-prev").addEventListener("click", () => {
+    const clients = Object.keys(testimonials);
+    const currentIndex = clients.indexOf(currentClient);
+    const prevIndex = (currentIndex - 1 + clients.length) % clients.length;
+    updateTestimonial(clients[prevIndex]);
+  });
+  
+  document.getElementById("testimonial-next").addEventListener("click", () => {
+    const clients = Object.keys(testimonials);
+    const currentIndex = clients.indexOf(currentClient);
+    const nextIndex = (currentIndex + 1) % clients.length;
+    updateTestimonial(clients[nextIndex]);
+  });
+  

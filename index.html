@@ -16,25 +16,25 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
         <div class="container">
-          <!-- Brand Logo -->
+          
           <a class="navbar-brand fw-bold" href="#">DIGITALSILK</a>
     
-          <!-- Hamburger Icon for Mobile -->
+          
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
     
-          <!-- Navbar Items -->
+          
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav align-items-center">
-              <!-- Quote Button -->
+              
               <li class="nav-item">
                 <a class="btn btn-outline-light me-3" href="#request-quote">Request a Quote</a>
               </li>
     
-              <!-- Menu Button -->
+              
               <li class="nav-item">
-                <!-- Changed href to a button and added ID for JavaScript control -->
+                
                 <button id="menuButton" class="btn btn-light">Menu</button>
               </li>
             </ul>
@@ -61,9 +61,9 @@
 
       <!-- start Cover Info part -->
       <section id="background-animation" class="position-relative">
-        <!-- Overlay -->
+       
         <div class="overlay"></div>
-        <!-- Animated Background -->
+        
         <div class="background-container">
             <div class="scrolling-column scrolling-up">
                 <img src="image/image1.jpg" alt="Project 1">
@@ -184,7 +184,7 @@
     </div>
     
       
-    <!-- Featured Website Design Projects -->
+    <!-- Start Featured Website Design Projects -->
       
     <section id="featured-projects">
       <div class="heading">
@@ -196,7 +196,7 @@
         </p>
       </div>
     
-      <!-- Feature Filter -->
+      
       <div class="feature-filter">
         <div class="feature-option active">FEATURED</div>
         <div class="feature-option">B2B</div>
@@ -205,7 +205,7 @@
       </div>
     
       <div id="projects-container" class="projects-grid">
-        <!-- Visible Projects -->
+        
         <div class="project" data-category="featured b2b">
             <img src="image/image1.jpg" alt="Project 1">
             <p>Northwestern University</p>
@@ -224,7 +224,7 @@
         </div>
     </div>
     
-    <!-- Hidden Projects -->
+    
     <div id="hidden-projects" class="projects-grid" style="display: none;">
         <div class="project">
             <img src="image/image5.jpg" alt="Project 5">
@@ -244,7 +244,7 @@
         </div>
     </div>
     
-    <!-- Buttons -->
+    
     <button id="load-more" class="btn">LOAD MORE EXAMPLES</button>
     <button id="hide-examples" class="btn" style="display: none;">HIDE EXAMPLES</button>
     
@@ -253,7 +253,7 @@
       <div class="modal-content">
         <span id="closeNotice" class="close">&times;</span>
         <h2>Project Details</h2>
-        <p id="noticeText"></p> <!-- Ensure this ID matches -->
+        <p id="noticeText"></p> 
       </div>
     </div>
 
@@ -269,7 +269,7 @@
 
 
     <section class="clients-section">
-      <!-- Section Title -->
+      
       <h2 class="clients-title">Clients Across Industries</h2>
       <p class="clients-subtitle">
         From startups to Fortune 500 companies, <br>
@@ -323,13 +323,13 @@
         <div class="sponsor"><img src="image\logo1.jpg" alt="EV Universe"></div>
       </div>
     
-      <!-- Call-to-Action Button -->
+      
       <div class="cta-container">
         <a href="#services" class="cta-button">Explore All Services</a>
       </div>
     </section>
     
-    <!-- -------------------- -->
+    <!-- Why Digital Silk?-------------------- -->
     <section class="digital-silk-section">
       <div class="digital-silk-header">
         <h1>Why Digital Silk?</h1>
@@ -360,10 +360,175 @@
       </div>
     </section>
     
+    <!-- From Concept To Market---------------- -->
+    <section id="case-studies" class="py-5">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-md-4">
+            <h2 class="text-white">Case Studies</h2>
+            <ul class="case-studies-list">
+              <li id="logo-hp" class="active"><img src="image/logo1.jpg" alt="HP Logo"></li>
+              <li id="logo-xerox"><img src="image/logo1.jpg" alt="Xerox Logo"></li>
+              <li id="logo-doforms"><img src="image/logo1.jpg" alt="DoForms Logo"></li>
+              <li id="logo-fieldedge"><img src="image/logo1.jpg" alt="FieldEdge Logo"></li>
+              <li id="logo-miami"><img src="image/logo1.jpg" alt="Miami Logo"></li>
+            </ul>
+          </div>
     
+          
+          <div class="col-md-8">
+            <div id="case-study-details">
+              <h3 class="text-uppercase">From Concept To Market:</h3>
+              <p class="text-white">We Engineer Projects For <span class="text-highlight">Superior Performance</span></p>
+              <div id="case-study-text">
+                <h4 id="case-title" class="text-primary">HP Case Study</h4>
+                <p id="case-description">HP needed to implement a global rewards program. In 6 months, we achieved:</p>
+              </div>
+              <div class="performance-metrics d-flex flex-wrap justify-content-between">
+                <div class="metric">
+                  <h2 id="metric-1" class="text-primary">40K</h2>
+                  <p id="metric-desc-1" class="text-white">active members inside the program</p>
+                </div>
+                <div class="metric">
+                  <h2 id="metric-2" class="text-primary">56%</h2>
+                  <p id="metric-desc-2" class="text-white">of customers are repeat customers</p>
+                </div>
+              </div>
+              <div class="mt-4">
+                <a href="#" class="btn btn-outline-primary me-2">Read Case Study</a>
+                <a href="#" class="btn btn-outline-light">Start Your Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- What Our Clients Love About Our Work --------------- -->
+    <section id="testimonials" class="py-5">
+      <div class="container text-white">
+        <div class="row">
+          
+          <div class="col-md-4 d-flex flex-column align-items-center">
+            <button id="testimonial-prev" class="btn btn-link text-white">▲</button>
+            <div id="client-logos">
+              <div class="client-logo active" data-client="tray">
+                <img src="image/logo1.jpg" alt="Tray Logo">
+                <p>Brian Whitney<br><small>CRO at Tray</small></p>
+              </div>
+              <div class="client-logo" data-client="amida">
+                <img src="image/logo1.jpg" alt="Amida Logo">
+                <p>Amida<br><small>Director of Marketing</small></p>
+              </div>
+              <div class="client-logo" data-client="growpath">
+                <img src="image/logo1.jpg" alt="GrowPath Logo">
+                <p>Connie Wong<br><small>Marketing Director</small></p>
+              </div>
+            </div>
+            <button id="testimonial-next" class="btn btn-link text-white">▼</button>
+          </div>
+    
+          
+          <div class="col-md-8">
+            <h5 class="text-uppercase text-info">What Our Clients Love About Our Work</h5>
+            <blockquote id="testimonial-text" class="blockquote">
+              <p>The Digital Silk team was the <span class="text-highlight">clear winner</span> of our selection process and they’ve been an absolute dream to work with throughout the entire process.</p>
+              <footer>— Brian Whitney, CRO at Tray</footer>
+            </blockquote>
+            <div class="mt-4">
+              <a href="#" class="btn btn-outline-primary">View Client Reviews</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="index.js"></script>
+
+<!-- CMS Platform Tailored For Client Needs--------------- -->
+<section id="cms-platforms" class="py-5">
+  <div class="container">
+   
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <h2 >CMS Platform Tailored For Client Needs</h2>
+        <p>
+          No matter which Content Management System (CMS) your website utilizes,
+          our experts are here to help. We tailor our services to meet your
+          specific needs, ensuring your CMS is optimized for performance,
+          flexibility, and ease of use.
+        </p>
+      </div>
+    </div>
+    
+    <div class="row">
+      
+      <div class="col-md-6 mb-4">
+        <div class="platform-card bg-light-blue p-4">
+          <div class="icon mb-3">
+            <img src="image/logo1.jpg" alt="WordPress" class="icon-image">
+          </div>
+          <h3>WordPress</h3>
+          <p>
+            At Digital Silk, we deliver high-performance, fully customized
+            WordPress websites that align perfectly with your brand and business
+            goals. Our experts create seamless, user-friendly experiences
+            designed to drive engagement and conversions.
+          </p>
+          <a href="#" class="btn btn-outline-primary">WordPress Development</a>
+        </div>
+      </div>
+      
+      <div class="col-md-6 mb-4">
+        <div class="platform-card bg-light-green p-4">
+          <div class="icon mb-3">
+            <img src="image/logo1.jpg" alt="Shopify" class="icon-image">
+          </div>
+          <h3>Shopify</h3>
+          <p>
+            Our design company excels in planning, developing, and scaling Shopify websites
+            to drive growth. From concept to launch, our experts transform your vision into
+            a thriving e-store.
+          </p>
+          <a href="#" class="btn btn-outline-primary">Shopify Development</a>
+        </div>
+      </div>
+    </div>
+   
+    <div class="row">
+      
+      <div class="col-md-6 mb-4">
+        <div class="platform-card bg-light-orange p-4">
+          <div class="icon mb-3">
+            <img src="image/logo1.jpg" alt="Magento" class="icon-image">
+          </div>
+          <h3>Magento</h3>
+          <p>
+            As a top-rated Magento web development company, we create premium online
+            stores that attract traffic, deliver great user experiences, and boost revenue.
+          </p>
+          <a href="#" class="btn btn-outline-primary">Magento Development</a>
+        </div>
+      </div>
+      
+      <div class="col-md-6 mb-4">
+        <div class="platform-card bg-light-purple p-4">
+          <div class="icon mb-3">
+            <img src="image/logo1.jpg" alt="Custom CMS" class="icon-image">
+          </div>
+          <h3>Custom CMS</h3>
+          <p>
+            Our custom CMS solutions are tailored to meet your unique needs, offering
+            unparalleled performance, flexibility, and ease of use.
+          </p>
+          <a href="#" class="btn btn-outline-primary">Custom CMS Development</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 </body>
 </html>
