@@ -191,14 +191,14 @@ const caseStudies = {
     });
   });
   
-window.addEventListener("resize", () => {
+  window.addEventListener("resize", () => {
     const caseStudiesList = document.querySelector(".case-studies-list");
     if (window.innerWidth <= 768) {
       caseStudiesList.style.overflowX = "auto";
       caseStudiesList.style.display = "flex";
-      caseStudiesList.style.justifyContent = "flex-start";
     } else {
       caseStudiesList.style.overflowX = "visible";
+      caseStudiesList.style.display = "block";
     }
   });
 
